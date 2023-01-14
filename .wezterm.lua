@@ -1,6 +1,7 @@
 local wezterm = require 'wezterm'
 return {
-  color_scheme = 'Dracula',
+  -- color_scheme = 'Dracula',
+  color_scheme = 'OneLight (Gogh)',
   font = wezterm.font 'JetBrains Mono',
   default_prog = {'powershell'},
   window_background_opacity = 1.0,
@@ -16,23 +17,30 @@ return {
   tab_max_width = 20,
   colors = {
     tab_bar = {
-      background = '#1e1f29',
+      -- background = '#1e1f29',
+      background = '#f8f8f8',
       active_tab = {
-        bg_color = '#bd93f9',
-        fg_color = '#1e1f29',
+        -- bg_color = '#bd93f9',
+        bg_color = '#41933e',
+        -- fg_color = '#1e1f29',
+        fg_color = '#f8f8f8',
         intensity = 'Normal',
         underline = 'None',
         italic = false,
         strikethrough = false,
       },
       inactive_tab = {
-        bg_color = '#1e1f29',
-        fg_color = '#bbbbbb',
+        -- bg_color = '#1e1f29',
+        bg_color = '#f8f8f8',
+        -- fg_color = '#bbbbbb',
+        fg_color = '#da3e39',
         italic = false,
       },
       new_tab = {
-        bg_color = '#1e1f29',
-        fg_color = '#bbbbbb',
+        -- bg_color = '#1e1f29',
+        bg_color = '#f8f8f8',
+        -- fg_color = '#bbbbbb',
+        fg_color = '#da3e39',
       },
     },
   },
