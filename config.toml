@@ -1,4 +1,4 @@
-theme = "dracula"
+theme = "onelight"
 
 [editor]
 mouse = true
@@ -35,3 +35,6 @@ esc = ["collapse_selection", "keep_primary_selection"]
 "A-n" = ":new"
 "A-h" = ":buffer-previous"
 "A-l" = ":buffer-next"
+"A-left" = ":buffer-previous"
+"A-right" = ":buffer-next"
+
