@@ -3,6 +3,7 @@ theme = "onelight"
 [editor]
 mouse = true
 auto-format = true
+auto-save = true
 line-number = "relative"
 bufferline = "always"
 indent-guides.render = true
@@ -30,11 +31,11 @@ hidden = false
 esc = ["collapse_selection", "keep_primary_selection"]
 "A-c" = ":clipboard-yank"
 "A-v" = ":clipboard-paste-replace"
-"A-w" = ":write"
+"A-w" = [":write", ":line-ending lf"]
 "A-q" = ":buffer-close!"
 "A-n" = ":new"
 "A-h" = ":buffer-previous"
 "A-l" = ":buffer-next"
 "A-left" = ":buffer-previous"
 "A-right" = ":buffer-next"
-
+g = { a = "code_action" }
