@@ -1,0 +1,73 @@
+layout {
+    default_tab_template {
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+        children
+        pane size=2 borderless=true {
+            plugin location="zellij:status-bar"
+        }
+    }
+    tab_template name="strider_tab" {
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+        pane split_direction="Vertical" {
+            pane size="15%" {
+                plugin location="zellij:strider"
+            }
+            children
+        }
+        pane size=2 borderless=true {
+            plugin location="zellij:status-bar"
+        }
+    }
+    tab name="Main" split_direction="vertical" focus=true {
+        pane split_direction="vertical" size="60%" {
+            pane name="tty 1"
+        }
+        pane split_direction="horizontal" {
+            pane name="tty 2"
+            pane name="tty 3"
+        }
+    }
+    tab name="Helix" split_direction="vertical" {
+        pane command="helix" name="helix" borderless=true
+    }
+    tab name="Htop" split_direction="vertical" {
+        pane command="htop" name="Htop" borderless=true
+    }
+    tab name="MC" split_direction="vertical" {
+        pane command="mc" name="mc" borderless=true
+    }
+    tab name="Git" split_direction="vertical" {
+        pane command="lazygit" name="lazygit"
+        pane name="git tty" size="35%"
+    }
+
+    // tab name="Server (pty thread)" split_direction="vertical" cwd="./zellij-server/src" {
+    //     pane edit="./pty.rs" name="PTY"
+    //     pane edit="./os_input_output.rs" name="OS_INPUT_OUTPUT"
+    // }
+    // tab name="Server (pane grids)" split_direction="horizontal" cwd="./zellij-server/src/panes" {
+    //     pane split_direction="vertical" {
+    //         pane edit="./tiled_panes/mod.rs" name="TILED PANES"
+    //         pane edit="./tiled_panes/tiled_pane_grid.rs" name="TILED PANES - GRID"
+    //         pane edit="./tiled_panes/pane_resizer.rs" name="TILED PANES - GRID - RESIZER"
+    //     }
+    //     pane split_direction="vertical" {
+    //         pane edit="./floating_panes/mod.rs" name="FLOATING_PANES"
+    //         pane edit="./floating_panes/floating_pane_grid.rs" name="FLOATING_PANES - GRID"
+    //     }
+    // }
+    // tab name="Server (Terminal)" split_direction="horizontal" cwd="./zellij-server/src/panes" {
+    //     pane split_direction="vertical" {
+    //         pane edit="./terminal_pane.rs" name="TERMINAL PANE"
+    //         pane edit="./grid.rs" name="GRID (ANSI PARSER)"
+    //     }
+    //     pane split_direction="vertical" {
+    //         pane edit="./terminal_character.rs" name="TERMINAL CHARACTER"
+    //         pane edit="./sixel.rs" name="SIXEL"
+    //     }
+    // }
+}
