@@ -1,6 +1,7 @@
 local wezterm = require 'wezterm'
 return {
   -- color_scheme = 'Dracula',
+  default_cursor_style = 'SteadyBar',
   color_scheme = 'OneLight (Gogh)',
   font = wezterm.font 'JetBrains Mono',
   default_prog = {'powershell'},
