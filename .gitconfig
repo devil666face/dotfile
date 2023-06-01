@@ -1,0 +1,7 @@
+[credential]
+	helper = store
+[http]
+	sslVerify = false
+[user]
+	name = Devil666face
+	email = artem1999k@gmail.com
