@@ -55,7 +55,7 @@ source-currency=''
 source-units='degree'
 target-currency=''
 target-units='radian'
-window-position=(2330, 40)
+window-position=(1366, 32)
 word-size=64
 
 [org/gnome/calendar]
@@ -68,7 +68,7 @@ window-size=(948, 1032)
 size=(948, 1032)
 
 [org/gnome/control-center]
-last-panel='keyboard'
+last-panel='universal-access'
 
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'YaST', '72a36ecf-a9f6-446b-93c8-6db6d607d24f', '337c09c3-f095-469b-a28d-f62519e048fb', '8224bca6-6375-4f35-8c68-cf6e3116fd2b', '1eea503c-4e40-4a4c-8990-380d83cb28e5', '706756fd-2ea1-4de8-a3d8-e5d6f908b17d']
@@ -138,11 +138,11 @@ clock-show-seconds=false
 clock-show-weekday=false
 color-scheme='prefer-dark'
 document-font-name='JetBrainsMono Nerd Font Medium 12'
-enable-animations=true
+enable-animations=false
 enable-hot-corners=false
-font-antialiasing='rgba'
-font-hinting='full'
-font-name='JetBrainsMonoNL Nerd Font Thin 12'
+font-antialiasing='grayscale'
+font-hinting='slight'
+font-name='JetBrainsMonoNL Nerd Font 12'
 gtk-theme='gtk-master'
 icon-theme='Dracula'
 monospace-font-name='JetBrainsMono Nerd Font 11'
@@ -314,7 +314,7 @@ button-layout='appmenu:close'
 focus-mode='sloppy'
 num-workspaces=5
 theme='Dracula'
-titlebar-font='JetBrainsMonoNL NF 10'
+titlebar-font='JetBrainsMonoNL Nerd Font Mono 10'
 workspace-names=['1️⃣ term', '2️⃣ web', '3️⃣ mail', '4️⃣ other', '5️⃣ dev']
 
 [org/gnome/eog/ui]
@@ -465,8 +465,8 @@ sleep-inactive-battery-type='nothing'
 app-picker-layout=[{'Utilities': <{'position': <0>}>, 'YaST': <{'position': <1>}>, '337c09c3-f095-469b-a28d-f62519e048fb': <{'position': <2>}>, '72a36ecf-a9f6-446b-93c8-6db6d607d24f': <{'position': <3>}>, '8224bca6-6375-4f35-8c68-cf6e3116fd2b': <{'position': <4>}>, '1eea503c-4e40-4a4c-8990-380d83cb28e5': <{'position': <5>}>}, {'706756fd-2ea1-4de8-a3d8-e5d6f908b17d': <{'position': <0>}>, 'com.alacritty.Alacritty.desktop': <{'position': <1>}>, 'obsidian.desktop': <{'position': <2>}>, 'yelp.desktop': <{'position': <3>}>}]
 command-history=['к', 'r']
 disable-user-extensions=false
-disabled-extensions=['apps-menu@gnome-shell-extensions.gcampax.github.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com']
-enabled-extensions=['ding@rastersoft.com', 'pop-cosmic@system76.com', 'system76-power@system76.com', 'ubuntu-appindicators@ubuntu.com', 'cosmic-dock@system76.com', 'cosmic-workspaces@system76.com', 'popx11gestures@system76.com', 'unite@hardpixel.eu', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'pop-shell@system76.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com']
+disabled-extensions=['apps-menu@gnome-shell-extensions.gcampax.github.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'just-perfection-desktop@just-perfection']
+enabled-extensions=['ding@rastersoft.com', 'pop-cosmic@system76.com', 'system76-power@system76.com', 'ubuntu-appindicators@ubuntu.com', 'cosmic-dock@system76.com', 'cosmic-workspaces@system76.com', 'popx11gestures@system76.com', 'unite@hardpixel.eu', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'pop-shell@system76.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'disable-workspace-switcher-popup@github.com']
 remember-mount-password=true
 welcome-dialog-last-shown-version='42.5'
 
@@ -481,6 +481,28 @@ intellihide=false
 manualhide=true
 multi-monitor=true
 
+[org/gnome/shell/extensions/just-perfection]
+background-menu=true
+controls-manager-spacing-size=0
+dash=true
+double-super-to-appgrid=true
+osd=true
+panel=true
+panel-in-overview=true
+ripple-box=true
+search=true
+startup-status=1
+theme=false
+window-demands-attention-focus=false
+window-picker-icon=true
+window-preview-caption=true
+window-preview-close-button=true
+workspace=true
+workspace-background-corner-size=0
+workspace-peek=true
+workspace-popup=true
+workspaces-in-app-grid=true
+
 [org/gnome/shell/extensions/pop-cosmic]
 overlay-key-action='LAUNCHER'
 show-applications-button=false
@@ -490,14 +512,16 @@ workspace-picker-left=true
 [org/gnome/shell/extensions/pop-shell]
 active-hint=true
 active-hint-border-radius=uint32 10
+fullscreen-launcher=false
 gap-inner=uint32 2
 gap-outer=uint32 2
 hint-color-rgba='rgb(98,0,119)'
-mouse-cursor-follows-active-window=true
+mouse-cursor-follows-active-window=false
 show-skip-taskbar=false
 show-title=false
-smart-gaps=false
+smart-gaps=true
 snap-to-grid=false
+stacking-with-mouse=true
 tile-by-default=true
 tile-enter=['<Super>KP_Enter']
 tile-orientation=@as []
