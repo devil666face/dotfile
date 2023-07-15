@@ -466,12 +466,12 @@ app-picker-layout=[{'Utilities': <{'position': <0>}>, 'YaST': <{'position': <1>}
 command-history=['к', 'r']
 disable-user-extensions=false
 disabled-extensions=['apps-menu@gnome-shell-extensions.gcampax.github.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com']
-enabled-extensions=['ding@rastersoft.com', 'pop-cosmic@system76.com', 'system76-power@system76.com', 'ubuntu-appindicators@ubuntu.com', 'cosmic-dock@system76.com', 'cosmic-workspaces@system76.com', 'popx11gestures@system76.com', 'unite@hardpixel.eu', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'pop-shell@system76.com']
+enabled-extensions=['ding@rastersoft.com', 'pop-cosmic@system76.com', 'system76-power@system76.com', 'ubuntu-appindicators@ubuntu.com', 'cosmic-dock@system76.com', 'cosmic-workspaces@system76.com', 'popx11gestures@system76.com', 'unite@hardpixel.eu', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'pop-shell@system76.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com']
 remember-mount-password=true
 welcome-dialog-last-shown-version='42.5'
 
 [org/gnome/shell/extensions/auto-move-windows]
-application-list=['userapp-Firefox-Q4V221.desktop:2', 'org.telegram.desktop._bd9ccae75ce72a4ddb4260b3c0743e13.desktop:3', 'virt-manager.desktop:5', 'yandex-browser.desktop:2', 'obsidian.desktop:4']
+application-list=['userapp-Firefox-Q4V221.desktop:2', 'virt-manager.desktop:5', 'yandex-browser.desktop:2', 'obsidian.desktop:4', 'org.telegram.desktop._bd9ccae75ce72a4ddb4260b3c0743e13.desktop:3']
 
 [org/gnome/shell/extensions/dash-to-dock]
 click-action='minimize'
@@ -503,13 +503,15 @@ tile-enter=['<Super>KP_Enter']
 tile-orientation=@as []
 
 [org/gnome/shell/extensions/unite]
-enable-titlebar-actions=true
+autofocus-windows=false
+enable-titlebar-actions=false
 extend-left-box=false
 hide-activities-button='auto'
 hide-window-titlebars='always'
 notifications-position='center'
+restrict-to-primary-screen=false
 show-desktop-name=false
-show-legacy-tray=true
+show-legacy-tray=false
 show-window-buttons='never'
 show-window-title='never'
 
@@ -558,7 +560,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(1379, 104)
+window-position=(1561, 104)
 window-size=(1530, 855)
 
 [org/virt-manager/virt-manager]
