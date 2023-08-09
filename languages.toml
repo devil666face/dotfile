@@ -5,3 +5,8 @@ language-server = { command = "pyright-langserver", args = ["--stdio"] }
 auto-format = true
 formatter = {command = 'black', args = ["--quiet", "-"]}
 config = ""
+
+[[languages]]
+name = "go"
+auto-format = true
+formatter = { command = "goimports" }
