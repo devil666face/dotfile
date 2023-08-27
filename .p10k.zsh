@@ -39,6 +39,10 @@
     # =========================[ Line #2 ]=========================
     newline                 # \n
     # prompt_char           # prompt symbol
+    # =========================[ Line #3 ]=========================
+    newline                 # \n
+    # prompt_char           # prompt symbol
+
   )
 
   # The list of segments shown on the right. Fill it with less important segments.
@@ -97,26 +101,27 @@
     nix_shell               # nix shell (https://nixos.org/nixos/nix-pills/developing-with-nix-shell.html)
     chezmoi_shell           # chezmoi shell (https://www.chezmoi.io/)
     vi_mode                 # vi mode (you don't need this if you've enabled prompt_char)
-    vpn_ip                # virtual private network indicator
-    load                  # CPU load
-    disk_usage            # disk usage
-    ram                   # free RAM
     # swap                  # used swap
+    time                    # current time
     todo                    # todo items (https://github.com/todotxt/todo.txt-cli)
     timewarrior             # timewarrior tracking status (https://timewarrior.net/)
     taskwarrior             # taskwarrior task count (https://taskwarrior.org/)
     per_directory_history   # Oh My Zsh per-directory-history local/global indicator
     # cpu_arch              # CPU architecture
-    time                    # current time
     # =========================[ Line #2 ]=========================
     newline
-    ip                    # ip address and bandwidth usage for a specified network interface
-    public_ip             # public IP address
-
+    load                  # CPU load
+    disk_usage            # disk usage
+    ram                   # free RAM
     # proxy                 # system-wide http/https/ftp proxy
     # battery               # internal battery
     # wifi                  # wifi speed
     # example               # example user-defined segment (see prompt_example function below)
+    # =========================[ Line #3 ]=========================
+    newline
+    vpn_ip                # virtual private network indicator
+    ip                    # ip address and bandwidth usage for a specified network interface
+    public_ip             # public IP address
   )
 
   # Defines character set used by powerlevel10k. It's best to let `p10k configure` set it for you.
