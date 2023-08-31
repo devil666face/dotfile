@@ -111,11 +111,11 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Source Code Pro
+    # family: Source Code Pro
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack
-    # family: JetBrains Mono
+    family: JetBrains Mono Nerd Font
     # family: UbuntuMono Nerd Font
     # family: Monofur Nerd Font
     # family: TerminessTTF Nerd Font
@@ -130,11 +130,11 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Source Code Pro
+    # family: Source Code Pro
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack
-    # family: JetBrains Mono
+    family: JetBrains Mono Nerd Font
     # family: UbuntuMono Nerd Font
     # family: Monofur Nerd Font
     # family: TerminessTTF Nerd Font
@@ -149,11 +149,11 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Source Code Pro
+    # family: Source Code Pro
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack
-    # family: JetBrains Mono
+    family: JetBrains Mono Nerd Font
     # family: UbuntuMono Nerd Font
     # family: Monofuritalic Nerd Font Mono
     # family: TerminessTTF Nerd Font
@@ -168,11 +168,11 @@ font:
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Source Code Pro
+    # family: Source Code Pro
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack
-    # family: JetBrains Mono
+    family: JetBrains Mono Nerd Font
     # family: UbuntuMono Nerd Font
     # family: Monofuritalic Nerd Font Mono
     # family: TerminessTTF Nerd Font
@@ -330,6 +330,40 @@ schemes:
       cyan:    '#8ec07c'
       white:   '#ebdbb2'
 
+### GruvboxDarkHard
+  GruvboxDarkHard: &GruvboxDarkHard
+  # Default colors
+    primary:
+      background: '0x1d2021'
+      foreground: '0xd5c4a1'
+
+    # Colors the cursor will use if `custom_cursor_colors` is true
+    cursor:
+      text: '0x1d2021'
+      cursor: '0xd5c4a1'
+
+    # Normal colors
+    normal:
+      black:   '0x1d2021'
+      red:     '0xfb4934'
+      green:   '0xb8bb26'
+      yellow:  '0xfabd2f'
+      blue:    '0x83a598'
+      magenta: '0xd3869b'
+      cyan:    '0x8ec07c'
+      white:   '0xd5c4a1'
+
+    # Bright colors
+    bright:
+      black:   '0x665c54'
+      red:     '0xfb4934'
+      green:   '0xb8bb26'
+      yellow:  '0xfabd2f'
+      blue:    '0x83a598'
+      magenta: '0xd3869b'
+      cyan:    '0x8ec07c'
+      white:   '0xfbf1c7'
+
 ### Monokai ###
   MonokaiPro: &MonokaiPro
     # Default colors
@@ -485,6 +519,37 @@ schemes:
       cyan:    '#93a1a1' # base1
       white:   '#fdf6e3' # base3
 
+  GruvboxLight: &GruvboxLight
+      # Colors (Gruvbox light)
+      # Default colors
+      primary:
+        # hard contrast: background = '#f9f5d7'
+        background: '#fbf1c7'
+        # soft contrast: background = '#f2e5bc'
+        foreground: '#3c3836'
+
+      # Normal colors
+      normal:
+        black:   '#fbf1c7'
+        red:     '#cc241d'
+        green:   '#98971a'
+        yellow:  '#d79921'
+        blue:    '#458588'
+        magenta: '#b16286'
+        cyan:    '#689d6a'
+        white:   '#7c6f64'
+
+      # Bright colors
+      bright:
+        black:   '#928374'
+        red:     '#9d0006'
+        green:   '#79740e'
+        yellow:  '#b57614'
+        blue:    '#076678'
+        magenta: '#8f3f71'
+        cyan:    '#427b58'
+        white:   '#3c3836'
+
   ### Solarized Light ###
   SolarizedLight: &SolarizedLight
     # Default colors
@@ -568,7 +633,7 @@ schemes:
 # *SolarizedDark
 # *TomorrowNight
 
-colors: *DoomOne
+colors: *GruvboxDark
 
 # Visual Bell
 #
@@ -591,10 +656,10 @@ colors: *DoomOne
 #   - Linear
 #
 # Specifying a `duration` of `0` will disable the visual bell.
-#visual_bell:
-#  animation: EaseOutExpo
-#  duration: 0
-#  color: '#ffffff'
+# visual_bell:
+#   animation: EaseOutExpo
+#   duration: 0
+#   color: '#ffffff'
 
 #selection:
   #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
@@ -603,16 +668,16 @@ colors: *DoomOne
   #save_to_clipboard: false
 
 # Allow terminal applications to change Alacritty's window title.
-#dynamic_title: true
+# dynamic_title: true
 
-#cursor:
+cursor:
   # Cursor style
   #
   # Values for `style`:
   #   - ▇ Block
   #   - _ Underline
   #   - | Beam
-  #style: Block
+  style: Beam
 
   # If this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
