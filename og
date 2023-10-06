@@ -1,0 +1,12 @@
+#!/bin/bash
+case "$1" in
+  -pull) 
+    cd /home/pps/second-brain.md
+    git pull
+  ;;
+  -push) 
+    cd /home/pps/second-brain.md
+    .obsidian/commit.sh
+  ;;
+    *) echo "Unknown parameters";;
+esac
