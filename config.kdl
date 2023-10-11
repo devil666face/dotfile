@@ -3,7 +3,8 @@
 copy_on_select false
 copy_command "xclip -selection clipboard"
 copy_clipboard "primary"
-theme "tokyo-night"
+theme "gruvbox-dark"
+default_layout "compact"
 keybinds {
     normal {
         unbind "Alt Right" "Alt Left" "Alt Down" "Alt Up"
@@ -16,10 +17,6 @@ keybinds {
         bind "Alt 7" { GoToTab 7; SwitchToMode "Normal"; }
         bind "Alt 8" { GoToTab 8; SwitchToMode "Normal"; }
         bind "Alt 9" { GoToTab 9; SwitchToMode "Normal"; }
-        // bind "Shift Left" { MoveFocusOrTab "Left"; }
-        // bind "Shift Right" { MoveFocusOrTab "Right"; }
-        // bind "Shift Down" { MoveFocus "Down"; }
-        // bind "Shift Up" { MoveFocus "Up"; }
         bind "Alt c" { Copy; }
     }
     locked {
@@ -275,6 +272,19 @@ themes {
         cyan 42 195 222
         white 192 202 245
         orange 255 158 100
+    }
+    gruvbox-dark {
+        fg 213 196 161
+        bg 40 40 40
+        black 60 56 54
+        red 204 36 29
+        green 152 151 26
+        yellow 215 153 33
+        blue 69 133 136
+        magenta 177 98 134
+        cyan 104 157 106
+        white 251 241 199
+        orange 214 93 14
     }
 }
 // Choose the theme that is specified in the themes section.
