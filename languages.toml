@@ -1,10 +1,10 @@
 [[language]]
 name = "python"
+language-servers = [ "pyright" ]
 roots = ["pyproject.toml", "setup.py", "Poetry.lock", ".git"]
-language-server = { command = "pyright-langserver", args = ["--stdio"] }
 auto-format = true
 formatter = {command = 'black', args = ["--quiet", "-"]}
-config = ""
+
 
 [[language]]
 name = "yaml"
@@ -16,21 +16,22 @@ name = "markdown"
 auto-format = true
 formatter = {command = 'prettier', args = ["--parser", "markdown"]}
 
-[[languages]]
+[[language]]
 name = "go"
 auto-format = true
 formatter = { command = "goimports" }
-# [language.debugger]
-# command = "dlv"
-# name = "dlv"
-# port-arg = "--port {}"
-# transport = "tcp"
-# [[language.debugger.templates]]
-# name = "binary"
-# request = "launch"
-# [[language.debugger.templates.completion]]
-# completion = "filename"
-# name = "binary"
-# [language.debugger.templates.args]
-# program = "{0}"
-# runInTerminal = true
+[language.debugger]
+command = "dlv"
+name = "dlv"
+port-arg = "--port {}"
+transport = "tcp"
+[[language.debugger.templates]]
+name = "binary"
+request = "launch"
+[[language.debugger.templates.completion]]
+completion = "filename"
+name = "binary"
+[language.debugger.templates.args]
+program = "{0}"
+runInTerminal = true
+
