@@ -1,20 +1,17 @@
 [[language]]
 name = "python"
-language-servers = [ "pyright" ]
 roots = ["pyproject.toml", "setup.py", "Poetry.lock", ".git"]
+language-servers = ["pyright", "ruff"]
+[language-server.pyright.config.python.analysis]
+typeCheckingMode = "basic"
+[language-server.ruff]
+command = "ruff-lsp"
+[language-server.ruff.config.settings]
+args = ["--ignore", "E501"]
+[language.formatter]
+command = "black"
 auto-format = true
-formatter = {command = 'black', args = ["--quiet", "-"]}
-
-
-[[language]]
-name = "yaml"
-auto-format = true
-formatter = {command = 'prettier', args = ["--parser", "yaml"]}
-
-[[language]]
-name = "markdown"
-auto-format = true
-formatter = {command = 'prettier', args = ["--parser", "markdown"]}
+args = ["--line-length", "88", "--quiet", "-"]
 
 [[language]]
 name = "go"
@@ -35,3 +32,20 @@ name = "binary"
 program = "{0}"
 runInTerminal = true
 
+[[language]]
+name = "yaml"
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "yaml"] }
+# [language-server.yaml-language-server.config.yaml]
+# format = { enable = true }
+# validation = true
+
+[[language]]
+name = "markdown"
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "markdown"] }
+
+[[language]]
+name = "toml"
+auto-format = true
+formatter = { command = "taplo", args = ["fmt", "-"] }
