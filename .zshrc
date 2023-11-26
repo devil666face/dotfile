@@ -112,10 +112,10 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/opt/helix/node/bin:/opt/helix/python/bin:/opt/helix/go/bin:/opt/helix:~/.go/bin:$PATH
 export GOPATH=~/.go
 
-alias fcd='cd $( ls -d **/*(/) | fzf --exact --reverse )'
-alias fcdh='cd ~ && cd $( ls -d **/*(/) | fzf --exact --reverse )'
-alias zcd='DIR=$( ls -d **/*(/) | fzf --exact --reverse ) && zellij action new-tab --name $DIR --cwd $DIR --layout default'
-alias zcdh='cd ~ && DIR=$( ls -d **/*(/) | fzf --exact --reverse ) && zellij action new-tab --name $DIR --cwd $DIR --layout default'
+alias fcd='cd $( ls -d **/*(/) | fzf --exact --reverse --border=rounded --preview="ls -lth {}" --preview-window=down )'
+alias fcdh='cd ~ && cd $( ls -d **/*(/) | fzf --exact --reverse --border=rounded --preview="ls -lth {}" --preview-window=down )'
+alias zcd='DIR=$( ls -d **/*(/) | fzf --exact --reverse --border=rounded --preview="ls -lth {}" --preview-window=down ) && zellij action new-tab --name $DIR --cwd $DIR --layout default'
+alias zcdh='cd ~ && DIR=$( ls -d **/*(/) | fzf --exact --reverse --border=rounded --preview="ls -lth {}" --preview-window=down ) && zellij action new-tab --name $DIR --cwd $DIR --layout default'
 
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
