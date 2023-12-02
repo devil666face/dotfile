@@ -49,3 +49,8 @@ formatter = { command = "prettier", args = ["--parser", "markdown"] }
 name = "toml"
 auto-format = true
 formatter = { command = "taplo", args = ["fmt", "-"] }
+
+[[language]]
+name = "templ"
+auto-format = true
+formatter = { command = "templ", args = ["fmt"] }
