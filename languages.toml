@@ -17,20 +17,6 @@ args = ["--line-length", "88", "--quiet", "-"]
 name = "go"
 auto-format = true
 formatter = { command = "goimports" }
-[language.debugger]
-command = "dlv"
-name = "dlv"
-port-arg = "--port {}"
-transport = "tcp"
-[[language.debugger.templates]]
-name = "binary"
-request = "launch"
-[[language.debugger.templates.completion]]
-completion = "filename"
-name = "binary"
-[language.debugger.templates.args]
-program = "{0}"
-runInTerminal = true
 
 [[language]]
 name = "yaml"
