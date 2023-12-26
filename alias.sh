@@ -1,0 +1,4 @@
+alias fcd='cd "$( find . -maxdepth 3 -type d | sort -n -r | grep -v venv | fzf -i --exact --reverse --border=rounded --preview="ls -lth {}" --preview-window=down )"'
+alias fcdh='cd ~ && cd "$( find . -maxdepth 3 -type d | sort -n -r | grep -v venv | fzf -i --exact --reverse --border=rounded --preview="ls -lth {}" --preview-window=down )"'
+alias zcd='DIR=$( find . -maxdepth 3 -type d  | sort -n -r | grep -v venv | fzf -i --exact --reverse --border=rounded --preview="ls -lth {}" --preview-window=down ) && zellij action new-tab --name $DIR --cwd $DIR --layout default'
+alias zcdh='cd ~ && DIR=$( find . -maxdepth 3 -type d | sort -n -r | grep -v venv | fzf -i --exact --reverse --border=rounded --preview="ls -lth {}" --preview-window=down ) && zellij action new-tab --name $DIR --cwd $DIR --layout default'
