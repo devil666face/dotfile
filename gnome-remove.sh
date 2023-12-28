@@ -8,4 +8,6 @@ apt-get autoremove -y yelp \
   gedit \
   totem \
   seahorse \
-  gucharmap
+  gucharmap \
+  pop-shop \
+  com.github.donadigo.eddy
