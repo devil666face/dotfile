@@ -4,5 +4,5 @@
 4. Multiplexor: [zellij](https://github.com/zellij-org/zellij)
 5. Editor: [helix-ide](https://github.com/Devil666face/helix-ide)
 6. Git: [lazygit](https://github.com/jesseduffield/lazygit)
-7. Docker: [lazydocker](https://github.com/jesseduffield/lazydocker)
+7. Docker: [lazydocker](https://github.com/jesseduffield/lazydocker) [dive](https://github.com/wagoodman/dive)
 8. File-manager: [lf](https://github.com/gokcehan/lf) [yazi](https://github.com/sxyazi/yazi) [mc](https://midnight-commander.org/)
