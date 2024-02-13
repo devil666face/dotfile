@@ -5,5 +5,10 @@
 	helper = store
 [core]
 	autocrlf = false
+	editor = /opt/helix/hx
 [http]
 	sslVerify = false
+[diff]
+	algorithm = histogram
+[color]
+    ui = true
