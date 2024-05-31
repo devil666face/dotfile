@@ -14,6 +14,18 @@ command = "black"
 args = ["--line-length", "88", "--quiet", "-"]
 
 [[language]]
+name = "nim"
+auto-format = true
+language-servers = ["nimlsp", "nimlangserver"]
+[language-server.nimlsp]
+command = "nimlsp"
+[language-server.nimlangserver]
+command = "nimlangserver"
+[language.formatter]
+command = "nph"
+args = ["-"]
+
+[[language]]
 name = "go"
 auto-format = true
 formatter = { command = "goimports" }
