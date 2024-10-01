@@ -1,7 +1,7 @@
-# theme = "gruvbox"
+theme = "gruvbox"
 # theme = "catppuccin_latte"
 # theme = "onelight"
-theme = "dracula"
+# theme = "dracula"
 
 [editor]
 mouse = true
@@ -43,6 +43,7 @@ esc = ["collapse_selection", "keep_primary_selection"]
 "A-l" = ":buffer-next"
 "A-left" = ":buffer-previous"
 "A-right" = ":buffer-next"
+X = "extend_line_above"
 S-down = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 S-up = [
   "extend_to_line_bounds",
