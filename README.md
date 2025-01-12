@@ -7,4 +7,5 @@
 7. Docker: [lazydocker](https://github.com/jesseduffield/lazydocker) [dive](https://github.com/wagoodman/dive)
 8. File-manager: [lf](https://github.com/gokcehan/lf) [yazi](https://github.com/sxyazi/yazi) [lsd](https://github.com/lsd-rs/lsd)
 9. Http: [atac](https://github.com/Julien-cpsn/ATAC)
-10. Net: [termshark](https://github.com/gcla/termshark)
+10. K8s: [k9s](https://github.com/derailed/k9s/releases/latest)
+11. Net: [termshark](https://github.com/gcla/termshark)
