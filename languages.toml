@@ -1,6 +1,7 @@
 [[language]]
 name = "python"
-roots = ["pyproject.toml", "setup.py", "Poetry.lock", ".git"]
+# roots = ["pyproject.toml", "setup.py", "Poetry.lock", ".git"]
+roots = ["main.py"]
 language-servers = ["pyright", "ruff"]
 auto-format = true
 [language-server.pyright.config.python.analysis]
@@ -29,6 +30,10 @@ args = ["-"]
 name = "go"
 auto-format = true
 formatter = { command = "goimports" }
+# [language-server.golangci-lint-langserver]
+# command = "golangci-lint-langserver"
+# [language-server.gopls]
+# command = "gopls"
 
 [[language]]
 name = "yaml"
@@ -52,3 +57,8 @@ formatter = { command = "taplo", args = ["fmt", "-"] }
 name = "templ"
 auto-format = true
 formatter = { command = "templ", args = ["fmt"] }
+
+[[language]]
+name = "bash"
+auto-format = true
+formatter = { command = "shfmt", args = [] }

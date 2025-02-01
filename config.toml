@@ -16,8 +16,8 @@ true-color = true
 auto-pairs = false
 end-of-line-diagnostics = "hint"
 
-[editor.inline-diagnostics]
-cursor-line = "info"
+# [editor.inline-diagnostics]
+# cursor-line = "info"
 
 [editor.lsp]
 display-messages = true
